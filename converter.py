@@ -55,7 +55,6 @@ for x in range(1, numberOfLocales):
     iOSFile = open(fileDestination + "/" + line1[x] + ".Strings", "w+")
 
     for row in csv_f:
-        ++rowIndex
         try:
             # Write string to xml
             ET.SubElement(resources, "string", name=row[0]).text = row[x].decode('utf-8')
