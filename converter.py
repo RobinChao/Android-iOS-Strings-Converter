@@ -5,8 +5,13 @@ csv in the format [key, language1, langauge2 ......]
 usage - Python converter.py [FILEPATH]
 """
 
-import sys, os, getopt, csv, xml.etree.ElementTree as ET
 from xml.dom import minidom
+
+import csv
+import getopt
+import os
+import sys
+import xml.etree.ElementTree as ET
 
 def prettify(elem):
     rough_string = ET.tostring(elem, 'utf-8')
