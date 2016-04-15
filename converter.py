@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
-# Script takes a csv and creates strings for Android (.xml) and iOS (.Strings).
-# csv in the format [key, language1, langauge2 ......]
-# usage - Python converter.py [FILEPATH]
+"""
+Script takes a csv and creates strings for Android (.xml) and iOS (.Strings).
+csv in the format [key, language1, langauge2 ......]
+usage - Python converter.py [FILEPATH]
+"""
 
 import sys, os, getopt, csv, xml.etree.ElementTree as ET
 from xml.dom import minidom
