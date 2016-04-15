@@ -25,7 +25,7 @@ if not os.path.exists(fileDestination):
     os.makedirs(fileDestination)
 
 # Read from csv
-f = open('Strings.csv')
+f = open('test_files/Strings.csv')
 csv_f = csv.reader(f)
 
 # Determine the number of languages from the csv
